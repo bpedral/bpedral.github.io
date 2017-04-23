@@ -311,6 +311,14 @@ footer .fa {
   color: #3589BA;
 }
 
+footer a,
+footer a:hover,
+footer a:focus,
+footer a:active,
+footer a.active {
+  color: white;
+}
+
 footer .titulo{
   color: #68ACD5;
 }
