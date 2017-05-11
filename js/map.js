@@ -11,10 +11,9 @@ function initMap() {
     var contentStringSJ = '<div id="locContent">' +
         '<div id="siteNotice">' +
         '</div>' +
-        '<h2 id="firstHeading" class="firstHeading">Consultório</h1>' +
+        '<h4 id="firstHeading" class="firstHeading">Consultório São Judas</h1>' +
         '<div id="bodyContent">' +
         '<p>Rua Major Freire' +
-        '</br>(Próximo ao Metrô São Judas) ' +
         '</br>São Paulo, SP 04304-110</p>' +
         '</div>' +
         '</div>';
@@ -34,7 +33,7 @@ function initMap() {
     //marker.setMap(map);
 
 
-    var locPaulista = { lat: -23.627683, lng: -46.639082 };
+    var locPaulista = { lat: -23.566327, lng: -46.649545 };
     mapPaulista = new google.maps.Map(document.getElementById('mapPaulista'), {
         center: locPaulista,
         zoom: 16
@@ -43,10 +42,9 @@ function initMap() {
     var contentStringP = '<div id="locContent">' +
         '<div id="siteNotice">' +
         '</div>' +
-        '<h2 id="firstHeading" class="firstHeading">Consultório</h1>' +
+        '<h4 id="firstHeading" class="firstHeading">Consultório Bela Vista</h1>' +
         '<div id="bodyContent">' +
         '<p>Av. Paulista, 726' +
-        '</br>(Próximo ao Metrô Brigadeiro - Linha Verde) ' +
         '</br>São Paulo, SP 01310-100</p>' +
         '</div>' +
         '</div>';
