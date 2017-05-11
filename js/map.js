@@ -2,38 +2,10 @@ var mapSaoJudas;
 var mapPaulista;
 
 function initMap() {
-    var locSaoJudas = { lat: -23.627683, lng: -46.639082 };
-    mapSaoJudas = new google.maps.Map(document.getElementById('mapSaoJudas'), {
-        center: locSaoJudas,
-        zoom: 16
-    });
+    
+    let locPaulista = { lat: -23.566327, lng: -46.649545 };
+    let locSaoJudas = { lat: -23.627683, lng: -46.639082 };
 
-    var contentStringSJ = '<div id="locContent">' +
-        '<div id="siteNotice">' +
-        '</div>' +
-        '<h4 id="firstHeading" class="firstHeading">Consultório São Judas</h1>' +
-        '<div id="bodyContent">' +
-        '<p>Rua Major Freire' +
-        '</br>São Paulo, SP 04304-110</p>' +
-        '</div>' +
-        '</div>';
-
-    var infowindowSJ = new google.maps.InfoWindow({
-        content: contentStringSJ
-    });
-
-    var markerSJ = new google.maps.Marker({
-        position: locSaoJudas,
-        map: mapSaoJudas,
-        title: 'Consultório'
-    });
-    markerSJ.addListener('click', function () {
-        infowindowSJ.open(mapSaoJudas, markerSJ);
-    });
-    //marker.setMap(map);
-
-
-    var locPaulista = { lat: -23.566327, lng: -46.649545 };
     mapPaulista = new google.maps.Map(document.getElementById('mapPaulista'), {
         center: locPaulista,
         zoom: 16
@@ -60,6 +32,35 @@ function initMap() {
     });
     markerP.addListener('click', function () {
         infowindowP.open(mapPaulista, markerP);
+    });
+    //marker.setMap(map);
+
+    mapSaoJudas = new google.maps.Map(document.getElementById('mapSaoJudas'), {
+        center: locSaoJudas,
+        zoom: 16
+    });
+
+    var contentStringSJ = '<div id="locContent">' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        '<h4 id="firstHeading" class="firstHeading">Consultório São Judas</h1>' +
+        '<div id="bodyContent">' +
+        '<p>Rua Major Freire' +
+        '</br>São Paulo, SP 04304-110</p>' +
+        '</div>' +
+        '</div>';
+
+    var infowindowSJ = new google.maps.InfoWindow({
+        content: contentStringSJ
+    });
+
+    var markerSJ = new google.maps.Marker({
+        position: locSaoJudas,
+        map: mapSaoJudas,
+        title: 'Consultório'
+    });
+    markerSJ.addListener('click', function () {
+        infowindowSJ.open(mapSaoJudas, markerSJ);
     });
     //marker.setMap(map);
 }
