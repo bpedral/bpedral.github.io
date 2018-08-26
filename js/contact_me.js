@@ -44,6 +44,9 @@ $(function() {
 
                     //clear all fields
                     $('#contactForm').trigger("reset");
+
+                    // Event snippet for form conversion page (Google analytics)
+                    gtag('event', 'conversion', {'send_to': 'AW-855481321/BSSGCNzW34cBEOm39pcD'});
                 },
                 error: function() {
                     // Fail message
